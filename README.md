@@ -4,22 +4,15 @@
 
 This is the source code of DSiMart's soon-to-be website. It contains NDS files, branding, and project information.
 
-## Folders and build script
+## Folders and sources
 * `/media` Media files used throughout the site (pictures, branding, sound effects)
 * `/meta` Files used for the website (CSS, JS, images, music)
 * `/nds` NDS files (shop)
 * `.gitlab-ci.yml` Build script for the website
+* `404.html` 404 page
+* `favicon.ico` Favicon
 
 ## Content pages
-* `404.html` 404 page
-* `branding.html` Branding for DSiMart
-* `credits.html` Credits for DSiMart
-* `CNAME` Domain text file
-* `errors.html` Error Code Checker
-* `favicon.ico` Favicon
 * `index.html` Main page
-* `install.html` Installation guide
-* `support.html` Support/FAQ page
-
 
 *The WiiMart Team is not affiliated with Nintendo or any related parties. To contact, please send an email to support@wiimart.org*
