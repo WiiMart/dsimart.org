@@ -1,5 +1,3 @@
-// Wii Shop BGM Player, suggested by @legamer66 (https://discord.com/channels/1346485785284575335/1346485786039681056/1351527080546009259)
-
 function hideConsoleControls() {
   const userAgent = navigator.userAgent.toLowerCase();
   const isConsoleBrowser =
@@ -7,7 +5,6 @@ function hideConsoleControls() {
     userAgent.includes('nintendo ds') ||
     userAgent.includes('nintendo 3ds') ||
     userAgent.includes('nintendo');
-  // they can't play music so rip
   if (isConsoleBrowser) {const bgmPlayerDiv = document.getElementById('bgmplayer');
   if (bgmPlayerDiv) {bgmPlayerDiv.style.display = 'none';} }
 }

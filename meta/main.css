@@ -1,11 +1,10 @@
 @font-face {font-family: 'Shop'; src: url('shop.ttf') format('truetype'); font-weight: normal; font-style: normal;}
 
 /*Main things*/
-body {scroll-behavior:smooth;text-align: center;font-family: sans-serif;font-family:'Shop',sans-serif; overflow-x:hidden;transition:.1s ease-in-out;}
-div {line-height:23.3px; background-color: white;border-radius: 5px;border-color: #ED0972;box-shadow: 0 0 10px #2525255d; box-sizing: border-box;border-width: 2px;border-style: solid; width: 35%; text-align: center;margin: 0 auto;padding: 5px;margin-top: 8px; overflow: auto;}
-div.clear {border:none;background: none;box-shadow: none;}
+body {text-align:center;font-family:'Shop',sans-serif;transition:.1s ease-in-out;scroll-behavior:smooth;}
 
-nav {margin-bottom: 20px;line-height: 30px;}
+div.row {width:50%;margin:auto;}
+div.box {line-height:23.3px;background-color: white;border-radius: 5px;border-color: #ED0972;box-shadow: 0 0 10px #2525255d; box-sizing: border-box;border-width: 2px;border-style: solid;  text-align:center;margin: 0 auto;padding:5px;margin-top: 8px;}
 
 a.btn {background-color: #E6FFF2;border-radius: 10px;padding: 4px;color:black;text-decoration: none;filter: drop-shadow(1px 1px 1px black);font-weight: 100;display:inline}
 a.btn:hover {background-color: #C7FDFF;}
@@ -20,22 +19,13 @@ footer a {color:grey}
 
 /* Text stuff */
 h1, h2 {color:#ED0972;}
-h1 {font-size: 30px;}
-h1 a {text-decoration:none}
-hr {border-color:grey}
-
-a {color:#ED0972; font-weight: bold;}
+a {color:#ED0972;font-weight:bold;}
 ::selection{color: #323232;background: #ED0972;}
 ::-moz-selection{color: #323232;background:#ED0972;}
-body.dir {text-align: left;}
-body.dir a {color:black;text-decoration: none;font-weight: normal;}
-body.dir a:hover {color:#ED0972}
-table {border: 1px solid white; border-collapse: collapse;}
-th, td {border: 1px solid;}
-button.ico {width:20px; height:20px;}
+
 img.ico {vertical-align: middle; width:25px; height:25px;}
 img.wb {outline: solid 1px black}
-.blue {color:#1164E9;}
+.pink {color:#ED0972;}
 
 mark {color:white;background:#ED0972;font-weight:bold;}
 mark.new {background-color: gold;color:orangered;border-radius: 10px; padding-right:5px; padding-left:5px;font-weight:bold;}
@@ -48,20 +38,20 @@ img.left {left: 10px; animation: hoverAnimation 0.5s infinite alternate;}
 img.right {right: 10px; animation: rightHoverAnimation 0.5s infinite alternate;}
 
 /* Music */
-div#bgmplayer {z-index: 1000;transition:.3s ease-in-out; opacity:30%; position:fixed; bottom:3px; border:2px solid #ED0972; left:3px; float:left; width:160px; height:40px; overflow:hidden;}
+div#bgmplayer {z-index: 1000;transition:.3s ease-in-out; opacity:30%;padding-top: 5px; position:fixed; bottom:3px; border:2px solid #ED0972; left:3px; float:left; width:160px; height:40px; overflow:hidden;}
 div#bgmplayer:hover {opacity: 50%; transition:.3s ease-in-out; height:100px; width:200px; overflow:auto;scrollbar-width: none;}
 div#bgmplayer h2 {height:20px; margin-top:-9px; line-height:40px}
 div#bgmplayer p {line-height:20px;color:#9A9A9A;margin-top:-10px;font-style:italic;font-size:10px;}
 
 
 /* Auto-resizer, do not change pls*/
-@media (max-width: 768px) {div {width: 95%} }
+@media (max-width: 768px) {div.row {width: 95%} }
 
 /* Dark theme via system preference */
 @media (prefers-color-scheme: dark)
 {
   body {background-color: black; color: #e0e0e0;}
-  div {background-color: #1e1e1e; border-color: #ED0972; box-shadow: 0 0 10px #000000CC;}
+  div.box {background-color: #1e1e1e; border-color: #ED0972; box-shadow: 0 0 10px #000000CC;}
   a.btn {background-color: #587566;color:white}
   a.btn:hover {background-color: #7da2a3;}
   span.active {background-color: #313131}
